@@ -26,8 +26,8 @@ output reg dout;
 always @(posedge clk)
 begin
 if (rst)
-    dout = 1'b0;
+    dout <= 1'b0;
 else
-    dout = d;
+    dout <= d;
 end
 endmodule
